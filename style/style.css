@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: grid;
+    width: 90%;
+    margin: 10px auto;
+    grid-template-columns: 2fr 3fr;
+    grid-gap: 10px 50px;
+}
+
+header h1 {
+    /* border: 1px solid black; */
+    font-size: 2rem;
+    padding: 5px;
+}
+
+.form_container {
+    margin: 10px;
+    border: 2px solid rgb(112, 24, 24);
+    border-radius: 10px;
+    background: #efefef;
+    box-shadow: rgb(180, 186, 194) 10px 10px 0px 0px;
+    font-size: 18px;
+}
+.form_container p, .form_container h3 {
+    padding: 10px;
+} 
+.form_container input , .form_container select, .form_container textarea {
+    display: block;
+    width: 90%;
+    font-size: 18px;
+}
+.form_container textarea {
+    resize: vertical;
+}
+
+.form_input {
+    /* border: 1px solid black; */
+}
+
+.form_search {
+    border-top: 1px solid black; 
+}
+
+
+
+/*---------- RIGHT HALF ---------------*/
+.done, .done button {
+    background-color: rgba(85, 163, 120, 0.5);
+}
+
+.right_half h2 {
+    text-align: center;
+}
+.change_task {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+.change_task div{
+    border: 1px solid rgba(0,0,0,.4);
+    border-bottom: 2px solid black;
+    border-radius: 10px 10px 0px 0px;
+}
+.change_task .active {
+    border: 2px solid black;
+    border-bottom: 0px solid transparent;
+    border-radius: 10px 10px 0px 0px;
+    background: #efefef;
+}
+
+.task_display {
+    border: 2px solid black;
+    border-top: 0px solid transparent;
+    height: 40rem;
+    overflow-y: scroll;
+    border-radius: 0 0 10px 10px;
+    background: #efefef;
+    box-shadow: rgb(180, 186, 194) 10px 10px 0px 0px;
+}
+.task {
+    display: flex;
+    flex-flow: column;
+    border-bottom: 1px solid #ddd;
+
+}
+.task .delete_button {
+    margin-right: 10px;
+    align-self: flex-end;
+    margin: 4px 10px 8px 0px;
+    color: red;
+    border: 0px solid transparent;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.task_display p {
+    padding: 5px 10px;
+}
+.task_display h3 {
+    padding-left: 10px;
+}
+.task_header {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+}
+.task_header input, .task_header p, .task .delete_button {
+    opacity: 0.2;
+}
+
+.task:hover .task_header input, 
+.task:hover .task_header p,
+.task:hover .delete_button {
+    opacity: 1;
+}
+
+/* .box_delete {
+    position: absolute;
+    border: 1px solid gray;
+    background-color: burlywood;
+    width: 100xp;   
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+} */
+.box_delete button {
+    /* height: 80%; */
+    margin: 5px;
+    background-color: rgb(166, 193, 194);
+}
+/*--------END-- RIGHT HALF ------------*/

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>To do List</title>
+</head>
+<body>
+    <main>
+        <section class="left_half">
+            <header>
+                <h1>To do List</h1>
+            </header>
+            <div class="form_container">
+                <form class="form_input">
+                    <h3>Новая задача</h3>
+                    <p>Дата<input type="date" class="input_date" required></p>
+                    <p>Комментарий <textarea name="text" id="textArea" cols="30" rows="6" required></textarea> </p>
+                    <p>Категория<select name="select" id="kategory" required>
+                        <option value="work" data-color="red" data-symbol="&#9446;">работа</option>
+                        <option value="sport" data-color="green" data-symbol="&#9442;">спорт</option>
+                        <option value="hobby" data-color="yellow" data-symbol="&#9403;">хобби</option>
+                        <option value="sale" data-color="orange" data-symbol="&#9410;">поккупки</option>
+                        <option value="house" data-color="blue" data-symbol="&#9405;">домашние дела</option>
+                    </select></p>
+                    <p><input type="submit" value="Добавить"></p>
+                </form>
+                <form class="form_search">
+                    <h3>Поиск задачи</h3>
+                    <p>Поиск&#128269;<input type="search" class="input_search" placeholder="Давай найду"></p>
+                    <p><input type="date" class="input_search_date"></p>
+                    <p><input type="submit" value="Найти"></p>
+                </form>
+            </div>
+        </section>
+
+
+        <section class="right_half">
+            <h2>Задачи</h2>
+            <div class="change_task">
+                <div class="all_task active">Все задачи</div>
+                <div class="search_task non_active">Задачи из поиска</div>
+            </div>
+            <ul class="task_display">
+            </ul>
+        </section>
+    </main>
+    <script src="scrtipt/script.js"></script>
+</body>
+</html>
